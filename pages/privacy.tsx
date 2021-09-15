@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -17,7 +18,11 @@ export const Privacy: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.header}>
           <Image src={Icon} alt="CryptoBase Logo" width="35" height="35" />
-          <h1 className={styles.heading}>CryptoBase</h1>
+          <Link href="/">
+            <a>
+              <h1 className={styles.heading}>CryptoBase</h1>
+            </a>
+          </Link>
         </div>
         <section className={styles.section}>
           <h2>Privacy Policy</h2>
