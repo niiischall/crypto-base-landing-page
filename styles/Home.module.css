@@ -11,7 +11,7 @@
 
 /*Hero*/
 .hero {
-  padding: 32px 0px;
+  padding: 64px 0px;
   width: 100%;
   position: relative;
   display: flex;
@@ -45,6 +45,13 @@
   font-size: 36px;
   text-transform: capitalize;
   width: 85%;
+  margin-bottom: 0px;
+}
+
+.heroBoxOne h2 {
+  font-size: 28px;
+  width: 85%;
+  margin-top: 0px;
 }
 
 .heroBoxOne h3 {
@@ -95,9 +102,75 @@
 
 /*About*/
 .about {
-  height: 75vh;
+  min-height: 75vh;
+  padding: 64px 0px;
   width: 100%;
   background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about > h1 {
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+}
+
+.aboutContainer {
+  width: 100%;
+  max-width: 1184px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.aboutBox {
+  background-color: #afd5aa;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 3px;
+  width: 325px;
+  height: 375px;
+  padding: 32px 16px;
+  transition: transform .3s;
+}
+
+.aboutBox:hover {
+  transform: translateY(-1.8rem) scale(1.05);
+}
+
+.aboutHeading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.aboutText {
+  font-size: 22px;
+  font-weight: bold;
+  color: #669900;
+  width: 90%;
+  margin: 0px auto;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1184px) {
+  .about {
+    padding: 32px 16px;
+  }
+  .aboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutBox {
+    margin: 24px 0px;
+  }
 }
 
 /*Features*/
@@ -129,7 +202,7 @@
 .featuresContainer h1 {
   font-size: 36px;
   color: #333;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
   text-align: center;
 }
 
@@ -145,11 +218,12 @@
 /*Description*/
 .description {
   width: 100%;
+  min-height: 75vh;
   background-color: #fff;
   padding: 32px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
