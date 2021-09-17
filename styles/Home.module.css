@@ -9,11 +9,78 @@
   width: 100%;
 }
 
+/*Hero*/
 .hero {
-  height: 75vh;
+  padding: 32px 0px;
   width: 100%;
-  background-color: #AFD5AA;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #AFD5AA; 
 }
+
+.heroLogo {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+}
+
+.heroContainer {
+  width: 100%;
+  max-width: 1184px;
+  display: flex;
+}
+
+.heroBoxOne {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #333;
+}
+
+.heroBoxOne h1 {
+  font-size: 36px;
+}
+
+.heroBoxOne h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.heroBoxTwo {
+  height: 600px;
+  width: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-image: url('/screenshot-one.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1184px) {
+  .hero {
+    padding: 32px 16px;
+  }
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroBoxOne {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 56px 0px;
+  }
+  .heroBoxTwo {
+    margin: 32px 0px;
+  }
+}
+
+/*About*/
 
 .about {
   height: 75vh;
@@ -34,7 +101,6 @@
 }
 
 /*Footer*/
-
 .footer {
   height: 50vh;
   width: 100%;

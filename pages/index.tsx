@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Heart } from "phosphor-react";
 
 import Icon from "../public/icon-128.png";
+import ScreenshotOne from "../public/screenshot-one.png";
 import styles from "../styles/Home.module.css";
 
 export const Home: NextPage = () => {
@@ -22,7 +23,16 @@ export const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <section className={styles.hero}>
-          <span>&nbsp;</span>
+          <div className={styles.heroLogo}>
+            <Image src={Icon} alt="CryptoBase Logo" width="60" height="60" />
+          </div>
+          <div className={styles.heroContainer}>
+            <div className={styles.heroBoxOne}>
+              <h1>Never miss that crypto <br /> opportunity again.</h1>
+              <h3>A chrome extension that's built to keep you ahead <br /> in the game, always.</h3>
+            </div>
+            <div className={styles.heroBoxTwo}>&nbsp;</div>
+          </div>
         </section>
         <section className={styles.about}>
           <span>&nbsp;</span>
@@ -46,7 +56,11 @@ export const Home: NextPage = () => {
               <Heart size={24} color="#ea481f" weight="fill" />
             </span>
             by{" "}
-            <a className={styles.footerLink} target="_blank" href="https://github.com/nischalNikit">
+            <a
+              className={styles.footerLink}
+              target="_blank"
+              href="https://github.com/nischalNikit"
+            >
               Nischal Nikit
             </a>
           </h3>
