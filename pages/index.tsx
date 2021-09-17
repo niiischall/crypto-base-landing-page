@@ -4,20 +4,17 @@ import Image from "next/image";
 import { Heart } from "phosphor-react";
 
 import Icon from "../public/icon-128.png";
-import ScreenshotOne from "../public/screenshot-one.png";
+import ScreenshotAlert from "../public/screenshot-alert.png";
 import styles from "../styles/Home.module.css";
 
 export const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>
-          CryptoBase - A chrome extension for everything related to
-          cryptocurrencies.
-        </title>
+        <title>CryptoBase | Explore, Follow And Set Alerts for cryptos</title>
         <meta
           name="description"
-          content="CryptoBase - A chrome extension for everything related to cryptocuurencies"
+          content="CryptoBase - Explore, Follow And Set Alerts for cryptos"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -28,8 +25,13 @@ export const Home: NextPage = () => {
           </div>
           <div className={styles.heroContainer}>
             <div className={styles.heroBoxOne}>
-              <h1>Never miss that crypto <br /> opportunity again.</h1>
-              <h3>A chrome extension that's built to keep you ahead <br /> in the game, always.</h3>
+              <h1>
+                Never miss that crypto <br /> opportunity again.
+              </h1>
+              <h3>
+                A chrome extension that's built to keep you <br /> ahead in the
+                crypto market. Always.
+              </h3>
             </div>
             <div className={styles.heroBoxTwo}>&nbsp;</div>
           </div>
@@ -41,7 +43,16 @@ export const Home: NextPage = () => {
           <span>&nbsp;</span>
         </section>
         <section className={styles.description}>
-          <span>&nbsp;</span>
+          <h1>Stay on top of the market</h1>
+          <div className={styles.descriptionContainer}>
+            <div className={styles.descriptionBoxOne}>
+              <Image src={ScreenshotAlert} alt="Screenshot Alert" />
+            </div>
+            <div className={styles.descriptionBoxTwo}>
+              <h1>Leave it on us for regular updates.</h1>
+              <h3>Get notifications instantly via browser, every minute.</h3>
+            </div>
+          </div>
         </section>
       </main>
       <footer className={styles.footer}>
