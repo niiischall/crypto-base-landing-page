@@ -5,6 +5,7 @@ import { Heart } from "phosphor-react";
 
 import Icon from "../public/icon-128.png";
 import ScreenshotAlert from "../public/screenshot-alert.png";
+import ScreenGif from "../public/screen-video.gif";
 import styles from "../styles/Home.module.css";
 
 export const Home: NextPage = () => {
@@ -26,7 +27,7 @@ export const Home: NextPage = () => {
           <div className={styles.heroContainer}>
             <div className={styles.heroBoxOne}>
               <h1>
-                Never miss that crypto <br /> opportunity again.
+                Create Alerts.<br/>Never Miss a Trade.
               </h1>
               <h3>
                 A chrome extension that's built to keep you <br /> ahead in the
@@ -40,7 +41,12 @@ export const Home: NextPage = () => {
           <span>&nbsp;</span>
         </section>
         <section className={styles.features}>
-          <span>&nbsp;</span>
+          <div className={styles.featuresContainer}>
+            <h1>It just takes ONE click to create an alert.</h1>
+            <div className={styles.featuresVideo}>
+              <Image src={ScreenGif} alt="Screen Video" width="800" height="500" />
+            </div>
+          </div>
         </section>
         <section className={styles.description}>
           <h1>Stay on top of the market</h1>
