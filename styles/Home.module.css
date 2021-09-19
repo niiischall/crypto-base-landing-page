@@ -37,20 +37,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #333;
 }
 
 .heroBoxOne h1 {
   font-size: 36px;
   text-transform: capitalize;
-  width: 85%;
   margin-bottom: 0px;
 }
 
 .heroBoxOne h2 {
   font-size: 28px;
-  width: 85%;
   margin-top: 0px;
 }
 
@@ -60,6 +58,27 @@
   margin: 0px;
   color: #669900;
   width: 85%;
+}
+
+.heroBoxOne .link {
+  display: block;
+  cursor: pointer;
+  color: #669900;
+  border: none;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 16px 32px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
 }
 
 .heroBoxTwo {
@@ -87,6 +106,7 @@
     text-align: center;
     margin-top: 56px;
     margin-bottom: 16px;
+    align-items: center;
   }
   .heroBoxOne h1 {
     width: 100%;
@@ -135,7 +155,7 @@
   width: 325px;
   height: 375px;
   padding: 32px 16px;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .aboutBox:hover {

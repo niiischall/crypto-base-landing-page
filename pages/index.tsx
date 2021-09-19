@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { Heart, BellRinging, NotePencil, Fire } from "phosphor-react";
+import Link from "next/link";
+import { Heart, BellRinging, NotePencil, Fire, Browsers } from "phosphor-react";
 
 import Icon from "../public/icon-128.png";
 import ScreenshotAlert from "../public/screenshot-alert.png";
@@ -32,6 +33,14 @@ export const Home: NextPage = () => {
                 A chrome extension that's built to keep you <br /> ahead in the
                 crypto market. Always.
               </h3>
+              <Link href="https://chrome.google.com/webstore/detail/cryptobase/ikfflekndepjnkfemndojilpkipdonfi">
+                <a target="_blank">
+                  <button className={styles.link}>
+                    <Browsers size={22} weight="fill" color="#669900" /> add to
+                    chrome
+                  </button>
+                </a>
+              </Link>
             </div>
             <div className={styles.heroBoxTwo}>&nbsp;</div>
           </div>
